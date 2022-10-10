@@ -1,4 +1,7 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
+
 
 const Quizzes = ({perQus}) => {
     console.log(perQus)
@@ -8,6 +11,7 @@ const Quizzes = ({perQus}) => {
             <div className='shadow-lg m-5 p-3 rounded-3'>
                 <p className='text-center fw-semibold '>
                    {question}
+                   <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
                 </p>
                 <div>
                     {
