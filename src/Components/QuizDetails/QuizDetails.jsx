@@ -4,15 +4,10 @@ import Questions from '../Questions/Questions';
 
 const QuizDetails = () => {
     const getQuizzes = useLoaderData();
-    const quizzes = getQuizzes.data.questions;
+    const ques = getQuizzes.data;
     return (
         <div>
-            {
-                quizzes.map(questions => <Questions
-                questions={questions}
-                key={questions.id}
-                ></Questions>)
-            }
+            <Questions ques={ques}></Questions>
         </div>
     );
 };
