@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
-        <div>
-            <nav className="navbar navbar-expand-lg bg-light p-3">
+        
+            <nav className="navbar navbar-expand-lg bg-light p-3 shadow-lg">
                 <div className="container">
                     <Link className="navbar-brand fw-bold" to="/">DeltaQuiz</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@ const NavBar = () => {
                     </div>
                 </div>
                 </nav>
-        </div>
+       
     );
 };
 

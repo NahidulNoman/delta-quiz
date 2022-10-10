@@ -2,13 +2,12 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 
-
 const Quizzes = ({perQus}) => {
     console.log(perQus)
     const {question,correctAnswer,options} = perQus;
     return (
         <div className='container'>
-            <div className='shadow-lg m-5 p-3 rounded-3'>
+            <div className='shadow-lg m-5 p-3 rounded-3 bg-white'>
                 <p className='text-center fw-semibold '>
                    {question}
                    <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
