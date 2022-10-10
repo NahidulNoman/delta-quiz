@@ -10,7 +10,7 @@ const Quiz = ({quiz}) => {
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text">Total Quiz : {total}</p>
-                    <Link to={`/quizzes/${id}`} className="btn btn-primary">Start Quiz</Link>
+                    <Link to={`/quiz/${id}`} className="btn btn-primary">Start Quiz</Link>
                 </div>
                 </div>
         </div>
