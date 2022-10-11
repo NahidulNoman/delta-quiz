@@ -6,7 +6,7 @@ const Questions = ({ques}) => {
     
     return (
         <div className='container'>
-                <h3 className='text-center m-5'>Question of  {name}</h3>
+                <h3 className='text-center m-5 text-decoration-underline fs-2 fw-bold'>Quiz of <span className='text-primary'> {name}</span></h3>
             <div>
                 {
                     questions.map(perQus => <Quizzes
