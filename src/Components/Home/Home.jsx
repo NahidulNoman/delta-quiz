@@ -16,7 +16,7 @@ const Home = () => {
             <p className='d-flex justify-content-center  align-items-center text-white h-100 fw-bold fs-2 w-50 mx-auto flex-column'>
            <span className='practice'> Practice makes perfect. Meaning – Doing something again and again is the best way to learn it.</span> <br />
            <Link to='/topics'>
-           <button className='btn btn-primary fw-semibold me-2'>Start Quiz <FontAwesomeIcon icon={faArrowCircleRight}></FontAwesomeIcon></button>
+           <button className='btn btn-primary fw-semibold me-2'>Go Topics <FontAwesomeIcon icon={faArrowCircleRight}></FontAwesomeIcon></button>
            </Link>
             </p>
             </div>
