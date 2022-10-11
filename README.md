@@ -17,4 +17,4 @@ You can use Mobile or Desktop.
 It's `SPA` Application using `react.js` , `react-router`
 
 This is the live site.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [https://delta-quiz-3027b9.netlify.app/home](https://delta-quiz-3027b9.netlify.app/home) to view it in your browser.
