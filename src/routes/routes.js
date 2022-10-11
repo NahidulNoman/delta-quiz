@@ -15,10 +15,12 @@ export const router = createBrowserRouter([
         children : [
             {
                 path : '/',
+                loader : () => fetch('https://openapi.programming-hero.com/api/quiz'),
                 element : <Home></Home>
             },
             {
                 path : '/home',
+                loader : () => fetch('https://openapi.programming-hero.com/api/quiz'),
                 element : <Home></Home>
             },
             {

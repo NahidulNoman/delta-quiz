@@ -13,16 +13,16 @@ const NavBar = () => {
                     <div className="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                        <Link className="nav-link fw-semibold" to="/home">Home</Link>
+                        <Link className="nav-link fw-semibold" to="/home" title='Home'>Home</Link>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link fw-semibold" to="/topics">Topics</Link>
+                        <Link className="nav-link fw-semibold" to="/topics" title='Topics'>Topics</Link>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link fw-semibold" to="/statistics">Statistics</Link>
+                        <Link className="nav-link fw-semibold" to="/statistics" title='Statistics'>Statistics</Link>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link fw-semibold" to="/blog">Blog</Link>
+                        <Link className="nav-link fw-semibold" to="/blog" title='Blog'>Blog</Link>
                         </li>
                     </ul>
                     </div>

@@ -2,21 +2,22 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import './Quizzes.css';
-
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Quizzes = ({perQus}) => {
     const {question,correctAnswer,options} = perQus;
     
     const correctAns = (correct) => {
-        alert(correct)
+        toast.info(`Answer!! -${correct}`)
     }
 
     const quizCorrect = (selectCorrect) => {
         if(selectCorrect === correctAnswer){
-            alert('yes you selected right ans!!')
+            toast.success(`Success!! -${correctAnswer}`)
         }
         else{
-            alert('wrong answer')
+            toast.error(`Wrong!! -${selectCorrect}`)
         }
     }
 
@@ -38,6 +39,10 @@ const Quizzes = ({perQus}) => {
                     }
                 </div>
             </div>
+            <ToastContainer 
+            position="top-center"
+            autoClose={1000}
+            />
         </div>
     );
 };
