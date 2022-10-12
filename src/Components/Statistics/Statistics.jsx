@@ -7,10 +7,9 @@ const Statistics = () => {
     const statistic = useLoaderData();
     const statistics = statistic.data;
     return (
-        <div className='container d-flex justify-content-center mt-5'>
-            {/* <ResponsiveContainer width={700} height="80%"> */}
-            <AreaChart width={500}
-          height={400}
+        <div className='container mt-5'>
+            <ResponsiveContainer width={'99%'} height={400}>
+            <AreaChart 
           data={statistics}>
          <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
@@ -18,7 +17,7 @@ const Statistics = () => {
           <Tooltip />
           <Area type="monotone" dataKey="total" stroke="#8884d8" fill="#8884d8" />
             </AreaChart>
-            {/* </ResponsiveContainer> */}
+            </ResponsiveContainer>
         </div>
     );
 };
