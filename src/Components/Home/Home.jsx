@@ -9,7 +9,6 @@ const Home = () => {
     const quizzes = useLoaderData();
     const homeQuiz = quizzes.data;
     console.log(homeQuiz);
-
     return (
         <div className='container '>
             <div className='home-container mt-5'>
