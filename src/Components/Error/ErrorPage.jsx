@@ -1,8 +1,10 @@
 import React from "react";
 import { useRouteError } from "react-router-dom";
 
-
 const ErrorPage = () => {
+  // const somePlace = {
+    
+  // }
   const error = useRouteError();
   return (
     <div className="d-flex justify-content-center text-center">
